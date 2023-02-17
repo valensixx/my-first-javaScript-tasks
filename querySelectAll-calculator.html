@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select all</title>
+</head>
+<body>
+    <!--
+        calculate data from 5 numbers from inputs 
+        using querySelector and loop
+    -->
+    <input type="number" class="number"> <br/> 
+    <input type="number" class="number"> <br/> 
+    <input type="number" class="number"> <br/> 
+    <input type="number" class="number"> <br/> 
+    <input type="number" class="number"> <br/> 
+    <button onclick="calc()">Calculate</button>
+    <script>
+        function calc(){
+            let elements = document.querySelectorAll('.number'); 
+            //console.log(elements);
+            let sum = 0;
+            for (let i=0; i<elements.length; i++){ 
+                
+                
+                if(elements[i].value.length > 0){
+                    sum += parseInt (elements[i].value);
+                }
+            }
+            console.log(sum);
+            alert(sum);
+        }
+    </script>
+</body>
+</html>
