@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check numbers</title>
+</head>
+<body>
+    <!--
+        user enters number and clicks button check
+        if number is > 5 the number is valid
+        if number is < 5 the number is invalind and it is displayed in alert!
+    -->
+    <input type="number" min="0" id="number">
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check(){
+            let num = document.querySelector('#number').value;
+            num = parseFloat(num);
+            if(num > 5){
+                alert('Number is valid! (bigger then 5)');
+            } else {
+                alert('Number is invalid! (smaller then 5)');
+            }
+        }
+    </script>
+</body>
+</html>
