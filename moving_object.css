@@ -1,0 +1,27 @@
+body{
+    position: relative;
+    height: 300px;
+}
+img{
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    height: 400px;
+    width: 500px;
+}
+
+.up,.down{
+    margin-left: 6rem;
+}
+
+button{
+    width:10rem;
+    background: none;
+    border: 1px solid silver;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+button:hover{
+    background-color: antiquewhite;
+}
