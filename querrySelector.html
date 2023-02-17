@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="example">
+        <div class="message" id="message">
+            Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. 
+            Deserunt, mollitia!
+        </div>
+    </div>
+    <button onclick="hideMessage()">Hide</button>
+    <script>
+        function hideMessage(){
+            //document.getElementById('message').innerHTML='';
+            //document.querySelector('.message').innerHTML = '';
+            //document.querySelector('#message').innerHTML = '';
+            document.querySelector('.example > .message').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
